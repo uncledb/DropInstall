@@ -97,7 +97,7 @@ public class InstallApk extends JFrame {
 	public void alertError(String message) {
 		JOptionPane.showMessageDialog(null, message, "错误",
 				JOptionPane.ERROR_MESSAGE);
-		System.out.println("message");
+		System.out.println(message);
 		initJta();
 
 	}
@@ -110,7 +110,7 @@ public class InstallApk extends JFrame {
 	public void alertInfo(String message) {
 		JOptionPane.showMessageDialog(null, message, "提示",
 				JOptionPane.INFORMATION_MESSAGE);
-		System.out.println("message");
+		System.out.println(message);
 		initJta();
 	}
 
