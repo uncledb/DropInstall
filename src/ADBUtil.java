@@ -8,6 +8,10 @@ import java.util.Map;
 
 public class ADBUtil {
 	/**
+	 * 应用名称
+	 */
+	public static final String APP_PACKAGENAME = "com.your.apppackagename";
+	/**
 	 * 查看设备adb shell
 	 */
 	public static final String MOBILE_INFO = "getprop ro.product.device";
@@ -46,11 +50,11 @@ public class ADBUtil {
 	/**
 	 * 卸载应用
 	 */
-	public static final String UNINSTALL = " uninstall com.yonyou.travelmanager2";
+	public static final String UNINSTALL = " uninstall " + APP_PACKAGENAME;
 	/**
 	 * 清除缓存
 	 */
-	public static final String CLEAR = " pm clear com.yonyou.travelmanager2";
+	public static final String CLEAR = " pm clear " + APP_PACKAGENAME;
 
 	// 选择指定的设备 adb -s XXXX install 1.apk
 	/**
